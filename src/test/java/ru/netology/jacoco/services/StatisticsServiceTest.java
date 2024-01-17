@@ -22,11 +22,13 @@ public class StatisticsServiceTest {
     void findMax1() {
         StatisticsService service = new StatisticsService();
 
-        long[] incomesInBillions = {12};
-        long expected = 12;
+        long[] incomesInBillions = {12, 13, 14};
+        long expected = 14;
 
         long actual = service.findMax(incomesInBillions);
 
         Assertions.assertEquals(expected, actual);
     }
+
+
 }
